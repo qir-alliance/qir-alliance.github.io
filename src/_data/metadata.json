@@ -1,0 +1,9 @@
+{
+  "title": "QIR Alliance",
+  "author": "QIR Alliance",
+  "description": "A community effort to develop a forward-looking, fully interoperable specification for quantum programs.",
+  "language": "en",
+  "logo": "src/img/teal.svg",
+  "docs": "https://qir-alliance.github.io/qir-book/",
+  "github": "https://github.com/qir-alliance"
+  }

@@ -1,0 +1,25 @@
+<article>
+      <header class="border-bottom pb-4 mb-4">
+        <h1 class="display-1">{{ title }}</h1>
+        {% block extraArticleHeader %}
+          {% set wc = content | striptags | wordcount %}
+          {% set wPerMinute = (wc / 240) + 1 %}
+          <aside class="fw-bold">
+            {{ wPerMinute | round }}
+            min read.
+          </aside>
+          <p>Published
+            <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+          </p>
+          {%- for tag in tags | filterTagList -%}
+            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+            <a href="{{ tagUrl | url }}" class="btn btn-outline-dark btn-sm me-2">{{ tag }}</a>
+          {%- endfor %}
+
+        {% endblock %}
+      </header>
+      <p class="lead">
+        {{ summary }}
+      </p>
+      {{ content | safe }}
+    </article>

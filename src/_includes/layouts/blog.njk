@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="h-100" lang="{{ metadata.language }}">
+
+  <head>
+    {% include 'snippets/head.njk' %}
+  </head>
+
+  <body>
+
+    {% include 'snippets/navbar.njk' %}
+
+    <main class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-xl-8">
+          <div class="py-vh-6 px-5 text-center">
+          {% include 'snippets/maincontent.njk' %}
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <div class="container py-vh-4 pt-0">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-md-7 border-top">
+          {% include 'snippets/postloop.njk' %}
+        </div>
+        <div class="col-12 col-md-4 border-top p-0 pt-5">
+          {% include 'snippets/blogsidebar.njk' %}
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      {% include 'snippets/footer.njk' %}
+    </footer>
+
+  </body>
+
+</html>
