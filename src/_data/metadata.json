@@ -5,6 +5,7 @@
   "language": "en",
   "logo": "src/img/teal.svg",
   "docs": "https://qir-alliance.github.io/qir-book/",
+  "projects" : "https://qir-alliance.github.io/qir-book/project-gallery.html",
   "github": "https://github.com/qir-alliance",
   "spec": "https://github.com/qir-alliance/qir-spec"
   }

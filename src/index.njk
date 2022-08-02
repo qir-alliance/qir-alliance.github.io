@@ -50,7 +50,7 @@ layout: layouts/blank.njk
       <p> The Steering members of the QIR Alliance include Microsoft, Oak Ridge National Laboratory, Quantinuum, Quantum Circuits Inc., and Rigetti Computing (in alphabetical order). For more information about the project organization, check out the <a href="https://github.com/qir-alliance/.github/blob/main/Project_Organization.md" class="link-fancy" target="_blank" rel="noopener">project charter.</a></p>
   
       <p>The steering committee meets once a month. The meetings are not open to the public at this time, but <a href="https://github.com/qir-alliance/.github/tree/main/minutes" class="link-fancy" target="_blank" rel="noopener"> the minutes</a> are published on GitHub. The steering committee may invite domain experts and repository maintainers to join the discussions. Please reach out to qiralliance@mail.com if you would like to propose a topic for consideration and/or would like to volunteer your time and expertise.</p>
-      <p>LOGOS + QUOTES</p>
+      <p><img src="{{ '/img/logos.png' | url }}" alt="qir alliance member logos" width="70%"></p>
     </div>
   </div>
 </div>
@@ -59,7 +59,8 @@ layout: layouts/blank.njk
   <div class="row py-5 border-top">
     <div class="col-12 border-right">
       <h2>Projects</h2>
-      <p>random selection of cards, with a link to the docs page gallery</p>
+          {% include 'snippets/projectlist.njk' %}
+      <a href="{{ metadata.projects | url }}" class="link-fancy">See more projects...</a>
     </div>
   </div>
 </div>

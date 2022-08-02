@@ -1,13 +1,44 @@
 {
     "projects": [
         {
-        "name":"",
-        "url":"",
-        "icon":"",
-        "description":"",
-        "tags":"",
-        "category":"",
-        "docs":""
-    }]
-
+            "name": "nwqsim",
+            "url": "https://github.com/qir-alliance/nwqsim",
+            "docs": "https://github.com/qir-alliance/nwqsim#nwqsim-northwest-quantum-circuit-simulation-environment",
+            "logo": "",
+            "description": "High-performance simulator for executing QIR on GPU and CPU backends.",
+            "tags": ["c++", "chemistry"],
+            "maturity": "",
+            "author": ""
+        },
+        {
+            "name": "pytket-qir",
+            "url": "https://github.com/CQCL/pytket-qir",
+            "docs": "https://github.com/CQCL/pytket-qir",
+            "logo": "",
+            "description": "Python package, aimed at interfacing QIR programs with `pytket`.",
+            "tags": ["python", "tket"],
+            "maturity": "",
+            "author": ""
+        },
+        {
+            "name": "pyqir",
+            "url": "https://github.com/qir-alliance/pyqir",
+            "docs": "https://qir-alliance.github.io/pyqir/",
+            "logo": "",
+            "description": "",
+            "tags": ["python", "utility"],
+            "maturity": "",
+            "author": ""
+        },
+        {
+            "name": "qat",
+            "url": "https://github.com/qir-alliance/qat",
+            "docs": "https://qir-alliance.github.io/qat/",
+            "logo": "",
+            "description": "QIR compiler tools and optimization passes for targeting QIR to different hardware backends",
+            "tags": ["optimization", "utility", "c++", "llvm"],
+            "maturity": "",
+            "author": ""
+        }
+    ]
 }
