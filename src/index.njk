@@ -2,11 +2,11 @@
 layout: layouts/blank.njk
 ---
 
-<div class="container my-vh-6">
+<div class="container my-vh-2">
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-lg-8 my-4 text-center">
       <h1 class="display-1">
-        <img src="{{ '/img/teal.svg' | url }}" alt={{ metadata.author }} height="60%" width="50%"><br>
+        <img src="{{ '/img/teal.svg' | url }}" alt={{ metadata.author }} height="25%" width="50%"><br>
         the core of quantum development.
       </h1>
       <p class="lead mb-4">{{ metadata.description }}</p>
@@ -20,11 +20,10 @@ layout: layouts/blank.njk
 
 <div id="why-qir" class="wrapper position-relative my-vh-5 bg-light">
   <div class="bg-white w-50 h-100 position-absolute d-none d-lg-block"></div>
-  <div class="container position-relative py-vh-4">
+  <div class="container position-relative py-vh-2">
     <div class="row justify-content-between d-flex align-items-stretch py-vh-2">
-      <h1>Why QIR?</h1>
       <div class="col-12 col-lg-5">
-        <h2 class="h2">Unlock quantum devices</h2>
+        <h2 class="h2">Unlock new quantum devices</h2>
         <p>We strive to develop a holistic solution that permits to take full advantage of unique and distinct capabilities in the landscape of heterogenous quantum processors. </p>
       </div>
       <div class="col-12 col-lg-5 py-vh-1">
@@ -32,44 +31,13 @@ layout: layouts/blank.njk
         <p>We are thrilled to be collaborating closely with the quantum community to design and implement the necessary compiler technology to accelerate advances in quantum programming language design and execution systems.</p>
       </div>
       <div class="col-12 col-lg-5 py-vh-1">
-        <h2>Enable hybrid quantum programs</h2>
+        <h2>Enable hybrid programs</h2>
         <p>11straps includes a dev build process with a local server and browser sync. Everything you need for your local live dev environment.</p>
       </div>
       <div class="col-12 col-lg-5 py-vh-1">
         <h2>Get involved</h2>
         <p>We welcome new repositories under the QIR Alliance from both members and non-members. If you are curious about the community, check out the QIR channel on the [Unitary Fund Discord], and the QIR community call and Office Hours every week on Thursdays on the Discord.</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row py-5 border-top">
-    <div class=" border-right">
-      <h2 id="members">Members</h2>
-      <p> The Steering members of the QIR Alliance include Microsoft, Oak Ridge National Laboratory, Quantinuum, Quantum Circuits Inc., and Rigetti Computing (in alphabetical order). For more information about the project organization, check out the <a href="https://github.com/qir-alliance/.github/blob/main/Project_Organization.md" class="link-fancy" target="_blank" rel="noopener">project charter.</a></p>
-  
-      <p>The steering committee meets once a month. The meetings are not open to the public at this time, but <a href="https://github.com/qir-alliance/.github/tree/main/minutes" class="link-fancy" target="_blank" rel="noopener"> the minutes</a> are published on GitHub. The steering committee may invite domain experts and repository maintainers to join the discussions. Please reach out to qiralliance@mail.com if you would like to propose a topic for consideration and/or would like to volunteer your time and expertise.</p>
-      <p><img src="{{ '/img/logos.png' | url }}" alt="qir alliance member logos" width="70%"></p>
-    </div>
-  </div>
-</div>
-
-<div id="projects" class="container">
-  <div class="row py-5 border-top">
-    <div class="col-12 border-right">
-      <h2>Projects</h2>
-          {% include 'snippets/projectlist.njk' %}
-      <a href="{{ metadata.projects | url }}" class="link-fancy">See more projects...</a>
-    </div>
-  </div>
-</div>
-
-<div id="resources" class="container">
-  <div class="row py-5 border-top">
-    <div class="col-12 border-right">
-      <h2>Learn More</h2>
-      <p>most basic full picture stuff, link to conceptual docs page</p>
     </div>
   </div>
 </div>
