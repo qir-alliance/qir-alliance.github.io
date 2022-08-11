@@ -4,6 +4,21 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss')
 
 module.exports = function(eleventyConfig) {
 
+    /* Markdown Plugins */
+    let markdownIt = require("markdown-it");
+    let markdownItAnchor = require("markdown-it-anchor");
+    let options = {
+        html: true,
+        breaks: true,
+        linkify: true
+    };
+    let opts = {
+        permalink: false
+    };
+
+    eleventyConfig.setLibrary("md", markdownIt(options)
+        .use(markdownItAnchor, opts)
+    );
 
   function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav"].indexOf(tag) === -1);
@@ -13,6 +28,10 @@ module.exports = function(eleventyConfig) {
   function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
   }
+
+  // eleventyConfig.addFilter('sortByProjectOwner', values => {
+  //   return values.slice().sort((a, b) => a.data.title.localeCompare(b.data.owner))
+  // })
 
   eleventyConfig.addFilter("filterTagList", filterTagList)
 
@@ -42,6 +61,7 @@ module.exports = function(eleventyConfig) {
 
   // Add a filter using the Config API
   eleventyConfig.addWatchTarget("./src/scss/");
+  eleventyConfig.addWatchTarget("./src/");
   eleventyConfig.setBrowserSyncConfig({
     reloadDelay: 400
   });

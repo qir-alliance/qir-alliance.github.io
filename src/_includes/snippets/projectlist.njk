@@ -1,13 +1,17 @@
-
-{% for project in projects.projects %}
-  <div class="bg-light p-4 rounded">
-  <h3>  <a href="{{ project.url | url }}" class="">{{ project.name }}
-  </a></h3>
-  <p>{{ project.description }}</p>
+<div class="row justify-content-between d-flex align-items-stretch">
+  <div class="col-12">
+    {% for project in projects.projects  %} {#| sortByProjectOwner#}
+      <div class="{{ "bg-primary bg-opacity-50" if project.owner == "qir-alliance" else "bg-light" }} p-4 rounded">
+        <h3>{{ project.name }} 
+          {% if project.owner == "qir-alliance" %}
+          <div class="btn btn-outline-dark btn-sm me-2">Official</div>
+          {% endif %}
+        </h3>
+        <p>{{ project.description }}</p>
+        <a href="{{ project.url | url }}" class="btn btn-outline-dark bg-dark badge bg-light btn-sm me-2">Website</a>
+        <a href="{{ project.docs | url }}" class="btn btn-outline-dark bg-dark badge bg-light btn-sm me-2">Docs</a>
+      </div>
+      <hr>
+    {% endfor %}
   </div>
-  {# <a href="{{ project.url | url }}" class="btn btn-outline-dark bg-dark badge bg-light btn-sm me-2">{{ project.name }}
-    <span class="ms-1 badge bg-light">
-    {{ project.description }}
-    </span>
-  </a> #}
-{% endfor %}
+</div>
