@@ -9,7 +9,36 @@ get involved.
 
 ## Adding news stories
 
-TODO:
+If you have some news or cool QIR related content that you want to share with
+the community, please fork this repo and make a pull request.
+News stories are simply markdown files in the posts directory (`src\posts`).
+The template requires a yaml header with the following fields:
+
+```yaml
+---
+title: The title of the news story
+date: Created
+summary: A short (one sentence) summary of the news story.
+tags:
+  - workstream
+  - entrypoint
+  - get-involved
+---
+```
+
+The date should be a literal date in the format `YYYY-MM-DD`, or if you want it
+to use the date the file was created, you can put `Created` in the date field.
+
+Tags should be all lowercase, words separated by dashes. If you want to see the
+existing tags, you can navigate to [qir-alliance.org/tags](https://qir-alliance.org/tags).
+
+News post content should be written in markdown, but there is support for html
+snippets.
+The post will automatically be added by the template to the news page, once the
+PR is merged.
+
+> For local testing of your PR, see the [README](README.md) for project setup
+> instructions.
 
 ## Reporting and Commenting on Issues
 
