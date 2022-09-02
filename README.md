@@ -2,6 +2,8 @@
 
 The one-stop shop for info about the QIR Alliance, resources, and events in the QIR community.
 
+> If you are looking to add to the site, take a look at the [contributing guide](CONTRIBUTING.md)
+
 ## Test build the site locally
 
 You need Node (at least v8+) on your computer. To check if you have node and what version run this command in your terminal:
@@ -36,7 +38,7 @@ npm run watch
 
 That will run a local server from `/dev` folder and connects browser sync to it. On changes within the `/src` folder it will run the `npm run build-dev` command automatically and will refresh your browser.
 
-**Build it for prod**
+**Build it for production**
 To build site for a prod deployment run:
 
 ```bash
