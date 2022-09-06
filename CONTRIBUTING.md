@@ -3,16 +3,16 @@
 Thank you for your interest in contributing to the QIR Homepage!
 
 There are many ways in which you can contribute to the QIR Homepage, whether by
-contributing a news story or by improving the web dev tools; we value contributions in
-all shapes and sizes! The following sections may give some ideas for how you can
-get involved.
+contributing a news story or by improving the web dev tools; we value
+contributions in all shapes and sizes! The following sections may give some
+ideas for how you can get involved.
 
 ## Adding news stories
 
 If you have some news or cool QIR related content that you want to share with
-the community, please fork this repo and make a pull request.
-News stories are simply markdown files in the posts directory (`src\posts`).
-The template requires a yaml header with the following fields:
+the community, please fork this repo and make a pull request. News stories are
+simply markdown files in the posts directory (`src\posts`). The template
+requires a yaml header with the following fields:
 
 ```yaml
 ---
@@ -30,26 +30,27 @@ The date should be a literal date in the format `YYYY-MM-DD`, or if you want it
 to use the date the file was created, you can put `Created` in the date field.
 
 Tags should be all lowercase, words separated by dashes. If you want to see the
-existing tags, you can navigate to [qir-alliance.org/tags](https://qir-alliance.org/tags).
+existing tags, you can navigate to
+[qir-alliance.org/tags](https://qir-alliance.org/tags).
 
 News post content should be written in markdown, but there is support for html
-snippets.
-The post will automatically be added by the template to the news page, once the
-PR is merged.
+snippets. The post will automatically be added by the template to the news
+page, once the PR is merged.
 
 > For local testing of your PR, see the [README](README.md) for project setup
 > instructions.
 
 ## Reporting and Commenting on Issues
 
-Have you identified a bug or information that would benefit the community?
-We want to hear about it! If you have feedback about the content in this
+Have you identified a bug or information that would benefit the community? We
+want to hear about it! If you have feedback about the content in this
 repository, please let us know by filing a [new
 issue](https://github.com/qir-alliance/qir-alliance.github.io/issues/new)!
 
 As for any active effort, there are always many ways in which we hope to evolve
-and improve the specification and tools. We encourage you to look at the list of
-currently [open issues](https://github.com/qir-alliance/qir-alliance.github.io/issues) to share
+and improve the specification and tools. We encourage you to look at the list
+of currently [open
+issues](https://github.com/qir-alliance/qir-alliance.github.io/issues) to share
 your ideas and expertise.
 
 ## Contributing Code
@@ -62,8 +63,9 @@ and link to the corresponding GitHub page where the fix is being developed. If
 someone is already working on a fix, ask if you can help or see what other
 things can be done. If an issue is labeled as feature, please follow the
 guidelines related to contributing features. If an issue has not been labeled
-yet, please indicate that you would like to work on it and be patient - we are a
-small team and are doing our best to be quick with responding to your inquiry!
+yet, please indicate that you would like to work on it and be patient - we are
+a small team and are doing our best to be quick with responding to your
+inquiry!
 
 If you are interested in contributing a new feature, please first check if a
 similar functionality has already been requested. If so, consider contributing
@@ -73,21 +75,22 @@ closed issue with such a request already exists, please file one following the
 template](https://github.com/qir-alliance/qir-alliance.github.io/issues/new?assignees=&labels=feature&template=feature_request.md&title=).
 We will respond to feature requests and follow up with a discussion around its
 feasibility, how one might go about implementing it, and whether that is
-something that makes sense to add. There are several reasons why we might not be
-able to eventually merge even a great feature. Perhaps
-most commonly, a contribution is a really good one, but this isn't the right
-place to develop it or we simply aren't ready to maintain and develop it
-further. It can be difficult to do everything, so we are careful to prioritize
-the quality and reliability across the code base over new features. In such
-cases, we strongly encourage you to pursue your passion project in your own
-fork, and welcome sharing and discussing your thoughts and progress on the
-corresponding issue regardless. We'll also ask for changes to a pull request if
-it requires more documentation or unit tests to better make use of it.
+something that makes sense to add. There are several reasons why we might not
+be able to eventually merge even a great feature. Perhaps most commonly, a
+contribution is a really good one, but this isn't the right place to develop it
+or we simply aren't ready to maintain and develop it further. It can be
+difficult to do everything, so we are careful to prioritize the quality and
+reliability across the code base over new features. In such cases, we strongly
+encourage you to pursue your passion project in your own fork, and welcome
+sharing and discussing your thoughts and progress on the corresponding issue
+regardless. We'll also ask for changes to a pull request if it requires more
+documentation or unit tests to better make use of it.
 
-If you are looking for a place to get started with contributing code, search for
-example for the
+If you are looking for a place to get started with contributing code, search
+for example for the
 [good-first-issue](https://github.com/qir-alliance/qir-alliance.github.io/labels/good%20first%20issue)
-or [help-wanted](https://github.com/qir-alliance/qir-alliance.github.io/labels/help%20wanted)
+or
+[help-wanted](https://github.com/qir-alliance/qir-alliance.github.io/labels/help%20wanted)
 labels. Also, look for issues that have already been discussed in more detail,
 and check if you can help someone who has already started working on it.
 
@@ -95,5 +98,5 @@ And last but not least:
 
 ## Thank You
 
-Your contributions to open source, large or small, make great projects like this
-possible. Thank you for taking the time to contribute.
+Your contributions to open source, large or small, make great projects like
+this possible. Thank you for taking the time to contribute.
