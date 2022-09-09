@@ -30,7 +30,7 @@ npm run build-dev
 ```
 
 This will build the static website into the `/dev` folder without all the
-minifiying and purging stuff (<- much faster and a more human friendly code
+minifying and purging stuff (<- much faster and a more human friendly code
 output, but a much bigger package)
 
 **Run in dev mode** To run the build-dev task automatically on file changes
