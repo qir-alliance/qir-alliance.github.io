@@ -26,4 +26,4 @@ jobs:
           custom-allsigned-prcomment: '**[CLA bot]** All Contributors have signed the CLA.'
           # TODO: edit the bot messages to link to the CLA
           custom-notsigned-prcomment: '**[CLA bot]** Thank you for your submission, we really appreciate it. Like many open-source projects, we ask that you sign our [Contributor License Agreement](https://github.com/qir-alliance/.github/blob/main/Contributor_License_Agreement.md) before we can accept your contribution. You can sign the CLA by just posting a Pull Request Comment with the following content:<br/>---<br/>***@[CLA bot] I have read the CLA Document and I hereby sign the CLA.***<br/>---<br/><sub>You can re-trigger this bot by commenting ***@[CLA bot] recheck CLA*** in this Pull Request.</sub>'
-          custom-pr-sign-comment: 'I have read the Contributor License Agreement and I hereby accept the Terms'
+          custom-pr-sign-comment: 'I have read the Contributor License Agreement and I hereby accept the Terms.'
