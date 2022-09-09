@@ -3,9 +3,7 @@
 # https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
 
 default: true
-line-length:
-  tables: false
-  code_blocks: false
+line-length: false
 
 # Use #-style section headings without the ending # marks, as that can
 # cause problems working with the Samples Browser.
@@ -25,7 +23,7 @@ no-duplicate-heading:
 
 # Allow selective inline markdown
 no-inline-html:
-  allowed_elements: [br, h1, sup, sub, a, p, iframe]
+  allowed_elements: [br, h1, sup, sub, a, p, iframe, img]
 
 # Allow exclamation mark and question marks in headings
 no-emphasis-as-heading:
