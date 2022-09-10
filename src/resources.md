@@ -33,7 +33,7 @@ We largely leave it up to the repository maintainers to define the rules and gui
 - The repository is either actively maintained by the maintainers or the repository is [archived](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories).
 - The Code of Conduct aligns in spirit with the [Code of Conduct](https://github.com/qir-alliance/.github/blob/main/Code_of_Conduct.md) of the broader org.
 - The project should be related in content to the goals and scope of the QIR Alliance as outlined on the [org page](https://qiralliance.org/).
-- All code should be licensed under [MIT license](https://mit-license.org/) or [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+- All code should be licensed under [MIT license](https://mit-license.org/), and we highly recommend to ask new contributors to accept the CLA defined by the maintainers. Instructions for how to set up a basic bot that present the chosen CLA to new contributors and asks them to accept it can be found [here](https://github.com/qir-alliance/.github/blob/main/workflow-templates/utils/cla_bot_setup.md).
 
 The QIR Alliance will reach out to the maintainers if a repository no longer satisfies these criteria to reach an agreement and resolve the situation. If the maintainers cannot be reached or are unable to take action, the QIR Alliance reserves the right to [archive the repository](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories).
 
