@@ -9,6 +9,7 @@ The QIR Alliance is a joint effort to develop a forward-looking quantum intermed
 
 We strive to develop a holistic solution that permits to take full advantage of unique and distinct capabilities in the landscape of heterogenous quantum processors. We are thrilled to be collaborating closely with the quantum community to design and implement the necessary compiler technology to accelerate advances in quantum programming language design and execution systems.
 
+<!-- markdown-link-check-disable-next-line -->
 The QIR Alliance is part of the Linux Foundation’s Joint Development Foundation work on open standards, you can read about the launch on the [Linux Foundation website](https://linuxfoundation.org/press-release/new-quantum-intermediate-representation-alliance-serves-as-common-interface-for-quantum-computing-development/).
 
 ## Steering Committee

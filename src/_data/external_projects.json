@@ -1,0 +1,42 @@
+{
+    "external_projects": [
+        {
+            "name": "pytket-qir",
+            "url": "https://github.com/CQCL/pytket-qir",
+            "docs": "https://github.com/CQCL/pytket-qir",
+            "logo": "",
+            "description": "Python package, aimed at interfacing QIR programs with `pytket`.",
+            "tags": [
+                "python",
+                "tket"
+            ],
+            "maturity": "",
+            "owner": "community"
+        },
+        {
+            "name": "qcs-sdk-qir",
+            "url": "https://github.com/rigetti/qcs-sdk-qir",
+            "docs": "https://github.com/rigetti/qcs-sdk-qir#qcs-qir-sdk",
+            "logo": "",
+            "description": "Compile & Run Quantum Intermediate Representation (QIR) Programs on QCS.",
+            "tags": [
+                "compilation",
+                "runtime"
+            ],
+            "maturity": "",
+            "owner": "community"
+        },
+        {
+            "name": "qwop",
+            "url": "https://github.com/crazy4pi314/qwop",
+            "docs": "https://github.com/crazy4pi314/qwop#qwop--tools-to-help-you-get-running-with-qir-in-python",
+            "logo": "",
+            "description": "Helpful utilities for working with QIR in Python.",
+            "tags": [
+                "utility"
+            ],
+            "maturity": "Experimental",
+            "owner": "community"
+        }
+    ]
+}
