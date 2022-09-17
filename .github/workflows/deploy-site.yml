@@ -18,3 +18,5 @@ jobs:
           PUBLISH_DIR: public 
           PUBLISH_BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          cname: www.qir-alliance.org
