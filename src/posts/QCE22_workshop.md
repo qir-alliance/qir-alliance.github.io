@@ -23,22 +23,34 @@ The full abstract of the workshop can also be found on [IEEE Quantum Week’s we
 ### Introduction and Welcome
 
 *10:00am - 10:30am Mountain Time* <br/>
-Presentation: A Holistic View of the Quantum-Classical Software Stack
+Presentation (Bettina Heim): A Holistic View of the Quantum-Classical Software Stack
 
 ### Session 1: Cross Platform Programming Approaches
 
 *10:30am - 12:00pm Mountain Time* <br/>
 The focus of this session is on programming model approaches and frameworks that enable one to program quantum architectures in a cross-platform manner, and their integration with classically heterogeneous system architectures.
 
+Presentation 1 (Blake Johnson): TBD
+Presentation 2 (Andrea Mari): TBD
+Panel Discussion: Alec Edgington, Michal Stechly, Steve Reinhardt <br/>
+
 ### Session 2: Code Transformations and Analysis
 
 *12:30pm - 2:00pm Mountain Time* <br/>
 The focus of this session is on lowering high-level abstractions to a common intermediate representation, integration across different toolchains, as well as transformations and analysis passes associated with subsequent compilation stages.
 
+Presentation 1 (Pete Campora): TBD
+Presentation 2 (Troels Ronnow): TBD
+Panel Discussion: Tom Lubinski, John Dumbell, Thien Nguyen <br/>
+
 ### Session 3: Interfacing with Physical Architectures
 
 *2:30pm - 4:00pm Mountain Time* <br/>
 The focus of this session is on targeting a common intermediate representation depending on backend properties, and interfacing the intermediate representation with control electronics systems driving quantum dynamics on the physical architecture.
+
+Presentation 1 (Thomas Alexander): TBD
+Presentation 2 (Kalan Snyder): TBD
+Panel Discussion: Wim Lavrijsen, Alan Geller <br/>
 
 ### Open Discussion and Networking
 
