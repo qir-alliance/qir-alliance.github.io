@@ -36,7 +36,7 @@ Panel Discussion: Michal Stechly, Steve Reinhardt, Ang Li <br/>
 
 ### Session 2: Code Transformations and Analysis
 
-*12:30pm - 2:00pm Mountain Time* <br/>
+*1:00pm - 2:30pm Mountain Time* <br/>
 The focus of this session is on lowering high-level abstractions to a common intermediate representation, integration across different toolchains, as well as transformations and analysis passes associated with subsequent compilation stages.
 
 Presentation 1 (Pete Campora): *"The Quantinuum QIR Profile: Design and Considerations"*
@@ -45,7 +45,7 @@ Panel Discussion: Tom Lubinski, John Dumbell, Thien Nguyen <br/>
 
 ### Session 3: Interfacing with Physical Architectures
 
-*2:30pm - 4:00pm Mountain Time* <br/>
+*3:00pm - 4:30pm Mountain Time* <br/>
 The focus of this session is on targeting a common intermediate representation depending on backend properties, and interfacing the intermediate representation with control electronics systems driving quantum dynamics on the physical architecture.
 
 Presentation 1 (Thomas Alexander): [*"Compiling dynamic circuit programs to quantum hardware at scale"*](#compiling-dynamic-circuit-programs-to-quantum-hardware-at-scale)
@@ -54,7 +54,7 @@ Panel Discussion: Wim Lavrijsen, Alan Geller <br/>
 
 ### Open Discussion and Networking
 
-*4:00pm - 4:45pm Mountain Time* <br/>
+*4:30pm Mountain Time* <br/>
 Open discussion and brainstorming to identify collaboration opportunities
 
 ## Abstracts
