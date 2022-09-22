@@ -14,7 +14,7 @@ The QIR Alliance is part of the Linux Foundation’s Joint Development Foundatio
 
 ## Steering Committee
 
-Steering members include Microsoft, Oak Ridge National Laboratory, Quantinuum, Quantum Circuits Inc., and Rigetti Computing (in alphabetical order). For more information about the project organization, we refer to [this document](https://github.com/qir-alliance/.github/blob/main/Project_Organization.md).
+Steering members include Microsoft, NVIDIA, Oak Ridge National Laboratory, Quantinuum, Quantum Circuits Inc., and Rigetti Computing (in alphabetical order). For more information about the project organization, we refer to [this document](https://github.com/qir-alliance/.github/blob/main/Project_Organization.md).
 
 <p><img src="{{ '/img/logos.png' | url }}" alt="qir alliance member logos" width="70%"></p>
 

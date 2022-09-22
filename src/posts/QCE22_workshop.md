@@ -39,7 +39,7 @@ Panel Discussion: Michal Stechly, Steve Reinhardt, Ang Li <br/>
 *12:30pm - 2:00pm Mountain Time* <br/>
 The focus of this session is on lowering high-level abstractions to a common intermediate representation, integration across different toolchains, as well as transformations and analysis passes associated with subsequent compilation stages.
 
-Presentation 1 (Pete Campora): TBD
+Presentation 1 (Pete Campora): *"The Quantinuum QIR Profile: Design and Considerations"*
 Presentation 2 (Troels Ronnow): [*"QIR Adaptor Tool: Targeting QIR to meet backend requirements"*](#qir-adaptor-tool-targeting-qir-to-meet-backend-requirements)
 Panel Discussion: Tom Lubinski, John Dumbell, Thien Nguyen <br/>
 
