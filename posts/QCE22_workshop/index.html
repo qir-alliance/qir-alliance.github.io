@@ -67,11 +67,11 @@
           
           
           <aside class="fw-bold">
-            3
+            5
             min read.
           </aside>
           <p>Published
-            <time datetime="2022-09-19">19 Sep 2022</time>
+            <time datetime="2022-09-22">22 Sep 2022</time>
           </p><a href="/tags/workshop/" class="btn btn-outline-dark btn-sm me-2">workshop</a><a href="/tags/event/" class="btn btn-outline-dark btn-sm me-2">event</a><a href="/tags/qce22/" class="btn btn-outline-dark btn-sm me-2">QCE22</a><a href="/tags/get-involved/" class="btn btn-outline-dark btn-sm me-2">get-involved</a>
 
         
@@ -87,28 +87,39 @@ If you would like the participate, please <a href="https://web.cvent.com/event/4
 <h2 id="program" tabindex="-1">Program</h2>
 <h3 id="introduction-and-welcome" tabindex="-1">Introduction and Welcome</h3>
 <p><em>10:00am - 10:30am Mountain Time</em> <br/><br>
-Presentation (Bettina Heim): A Holistic View of the Quantum-Classical Software Stack</p>
+Presentation (Bettina Heim): <em>&quot;A Holistic View of the Quantum-Classical Software Stack&quot;</em></p>
 <h3 id="session-1%3A-cross-platform-programming-approaches" tabindex="-1">Session 1: Cross Platform Programming Approaches</h3>
 <p><em>10:30am - 12:00pm Mountain Time</em> <br/><br>
 The focus of this session is on programming model approaches and frameworks that enable one to program quantum architectures in a cross-platform manner, and their integration with classically heterogeneous system architectures.</p>
-<p>Presentation 1 (Blake Johnson): TBD<br>
-Presentation 2 (Andrea Mari): TBD<br>
-Panel Discussion: Alec Edgington, Michal Stechly, Steve Reinhardt <br/></p>
+<p>Presentation 1 (Blake Johnson): <a href="#openqasm-3-a-multi-level-interchange-format-for-quantum-circuits">&quot;<em>OpenQASM 3: a multi-level interchange format for quantum circuits</em>&quot;</a><br>
+Presentation 2 (Andrea Mari): <a href="#mitiq-a-cross-platform-error-mitigation-toolkit"><em>&quot;Mitiq: A cross-platform error mitigation toolkit&quot;</em></a><br>
+Panel Discussion: Michal Stechly, Steve Reinhardt, Ang Li <br/></p>
 <h3 id="session-2%3A-code-transformations-and-analysis" tabindex="-1">Session 2: Code Transformations and Analysis</h3>
 <p><em>12:30pm - 2:00pm Mountain Time</em> <br/><br>
 The focus of this session is on lowering high-level abstractions to a common intermediate representation, integration across different toolchains, as well as transformations and analysis passes associated with subsequent compilation stages.</p>
 <p>Presentation 1 (Pete Campora): TBD<br>
-Presentation 2 (Troels Ronnow): TBD<br>
+Presentation 2 (Troels Ronnow): <a href="#qir-adaptor-tool-targeting-qir-to-meet-backend-requirements"><em>&quot;QIR Adaptor Tool: Targeting QIR to meet backend requirements&quot;</em></a><br>
 Panel Discussion: Tom Lubinski, John Dumbell, Thien Nguyen <br/></p>
 <h3 id="session-3%3A-interfacing-with-physical-architectures" tabindex="-1">Session 3: Interfacing with Physical Architectures</h3>
 <p><em>2:30pm - 4:00pm Mountain Time</em> <br/><br>
 The focus of this session is on targeting a common intermediate representation depending on backend properties, and interfacing the intermediate representation with control electronics systems driving quantum dynamics on the physical architecture.</p>
-<p>Presentation 1 (Thomas Alexander): TBD<br>
-Presentation 2 (Kalan Snyder): TBD<br>
+<p>Presentation 1 (Thomas Alexander): <a href="#compiling-dynamic-circuit-programs-to-quantum-hardware-at-scale"><em>&quot;Compiling dynamic circuit programs to quantum hardware at scale&quot;</em></a><br>
+Presentation 2 (Kalan Snyder): <em>&quot;QIR Platform Support: Behind the Scenes&quot;</em><br>
 Panel Discussion: Wim Lavrijsen, Alan Geller <br/></p>
 <h3 id="open-discussion-and-networking" tabindex="-1">Open Discussion and Networking</h3>
 <p><em>4:00pm - 4:45pm Mountain Time</em> <br/><br>
 Open discussion and brainstorming to identify collaboration opportunities</p>
+<h2 id="abstracts" tabindex="-1">Abstracts</h2>
+<h3 id="openqasm-3%3A-a-multi-level-interchange-format-for-quantum-circuits" tabindex="-1">OpenQASM 3: a multi-level interchange format for quantum circuits</h3>
+<p>OpenQASM 2 has become a de facto interchange format for quantum circuits. However, it is not sufficiently powerful to describe the full range of circuits that are executable on next-generation quantum systems. I will give an overview of the main features of OpenQASM 3 and how it seeks to address this problem.</p>
+<h3 id="mitiq%3A-a-cross-platform-error-mitigation-toolkit" tabindex="-1">Mitiq: A cross-platform error mitigation toolkit</h3>
+<p>In order to reduce errors on near-term quantum computers, several &quot;error mitigation&quot; techniques have been recently proposed that are able to significantly improve the estimation of quantum expectation values via simple circuit transformations and classical post-processing.<br>
+Mitiq is a Python package for implementing error mitigation techniques on different quantum platforms (it can currently interface with Cirq, Qiskit, PyQuil, Braket and PennyLane). Its workflow is intentionally abstracted from the underlying physical hardware, such that it can be easily applied to any quantum backend. Mitiq applies error mitigation at the &quot;circuit level&quot;, in the sense that it takes as input a quantum circuit and produces a sequence of quantum circuits to be executed and post-processed. In this sense, it can be considered as an error mitigation compiler that acts at the top of the circuit execution pipeline. The current progress on quantum intermediate representations opens the interesting perspective of pushing the error mitigation layer down to a lower level of abstraction in the quantum software stack, with promising advantages with respect to efficiency and interoperability.</p>
+<h3 id="qir-adaptor-tool%3A-targeting-qir-to-meet-backend-requirements" tabindex="-1">QIR Adaptor Tool: Targeting QIR to meet backend requirements</h3>
+<p>In this talk, I present the QIR Adaptor Tool (QAT) which is used to manipulate and validate QIR in order to target it to a given backend (hardware or simulator). Using a target configuration, the tool allows us to target generic QIR to meet a backend specific profile.</p>
+<h3 id="compiling-dynamic-circuit-programs-to-quantum-hardware-at-scale" tabindex="-1">Compiling dynamic circuit programs to quantum hardware at scale</h3>
+<p>At IBM, we have a focus on building quantum compiler and control-system solutions that will enable our roadmap to thousands of qubits, necessitating developments in system-level intermediate representations, code-generators, and runtimes that are capable of reasoning about and orchestrating networked systems of heterogeneous hardware in real-time. There is a growing body of literature on transforming and optimizing quantum programs to target abstract representations of a QPU like those in SDKs such as Qiskit. A comparatively smaller body of work describing the challenges in compiling quantum programs to the classical electronics that send and receive signals to/from the QPU exists.</p>
+<p>In this talk, we will discuss how the multi-level intermediate representation (MLIR) has enabled us to build a compiler for our hardware control systems while being extensible for future developments in qubit and control-system technologies. We will introduce the high-level architecture of our control systems and critically how we capture this within our software. We will then discuss further compilation challenges that we envision as the number of qubits within a system continue to grow.</p>
 
     </article>
 
