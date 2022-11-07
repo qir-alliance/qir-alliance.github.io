@@ -22,6 +22,16 @@ Steering members include Microsoft, NVIDIA, Oak Ridge National Laboratory, Quant
 
 The steering committee meets once a month. The meetings are not open to the public at this time, but minutes are published [here](https://github.com/qir-alliance/.github/tree/main/minutes). The steering committee may invite domain experts and repository maintainers to join the discussions. Please reach out to [qiralliance@mail.com](mailto:qiralliance@mail.com) if you would like to propose a topic for consideration and/or would like to volunteer your time and expertise.
 
+## Community
+
+We are excited to be collaborating closely with the quantum community to design and implement the necessary infrastructure and specs to accelerate advances in quantum technologies.
+We are always looking for community members to help us shape the future of this technology.
+We want to recognize the following individuals from the community who have significant impact on the QIR Alliance's mission:
+
+- [Sarah Kaiser](https://github.com/crazy4pi314), QIR Alliance Core Maintainer
+
+If you are interested in joining the QIR Alliance, or contributing to areas that are not code, please reach out to [qiralliance@mail.com](mailto:qiralliance@mail.com) and we will be happy to discuss how you can help.
+
 ## Logo
 
 Logos and icons of the QIR Alliance and associated efforts can be downloaded [from our GitHub repo](https://github.com/qir-alliance/.github/tree/main/logo).
