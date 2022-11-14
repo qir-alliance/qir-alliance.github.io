@@ -30,5 +30,5 @@ no-emphasis-as-heading:
   punctuation: ".,;:。，；：！"
 
 # Exclude certain links that are valid but frequently failing the check
-ignorePatterns: 
+ignore-patterns: 
   pattern: "^https://docs.github.com/en/actions/security-guides/encrypted-secrets"
