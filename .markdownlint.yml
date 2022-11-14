@@ -28,7 +28,3 @@ no-inline-html:
 # Allow exclamation mark and question marks in headings
 no-emphasis-as-heading:
   punctuation: ".,;:。，；：！"
-
-# Exclude certain links that are valid but frequently failing the check
-ignore-patterns: 
-  pattern: "^https://docs.github.com/en/actions/security-guides/encrypted-secrets"
