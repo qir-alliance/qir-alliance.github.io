@@ -23,7 +23,7 @@
     "clean-prod": "gulp clean-public"
   },
   "dependencies": {
-    "@11ty/eleventy": "2.0.0-canary.16",
+    "@11ty/eleventy": "2.0.1",
     "bootstrap": "5.2.2",
     "bootstrap-icons": "1.10.2",
     "browser-sync": "^2.27.10",
