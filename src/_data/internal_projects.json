@@ -66,6 +66,19 @@
             ],
             "maturity": "",
             "owner": "qir-alliance"
+        },
+        {
+            "name": "qir-runner",
+            "url": "https://github.com/qir-alliance/qir-runner",
+            "docs": "https://github.com/qir-alliance/qir-runner/blob/main/README.md",
+            "logo": "",
+            "description": "QIR bytecode runner to assist with QIR development and validation ",
+            "tags": [
+                "rust",
+                "simulation"
+            ],
+            "maturity": "",
+            "owner": "qir-alliance"
         }
     ]
 }
