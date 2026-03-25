@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A community effort to develop a forward-looking, fully interoperable specification for quantum programs.">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon.png">
+  <meta name="author" content="QIR Alliance">
+  <meta name="generator" content="11straps">
+  <meta name="HandheldFriendly" content="true"/>
+  <title>Adaptive Profile Support in Quantinuum Helios (and System Model H2!)</title>
+  <link rel="stylesheet" href="/css/theme.min.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+  <div class="container">
+    <a class="navbar-brand mb-0 py-4 px-3 pt-5 text-center text-white bg-black" href="/"><img src="/img/teal_highres.png" alt=QIR Alliance width="60" height="60"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item me-1">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+
+
+        
+
+        <li class="nav-item me-1">
+          <a class="nav-link" href="/alliance">Alliance</a>
+        </li>
+
+        <li class="nav-item me-1">
+          <a class="nav-link" href="/projects">Projects</a>
+        </li>
+
+        <li class="nav-item me-1">
+          <a class="nav-link" href="/news">News</a>
+        </li>
+
+        <li class="nav-item me-1">
+          <a class="nav-link" href="/resources">Resources</a>
+        </li>
+
+        <li class="nav-item me-1">
+          <a class="nav-link" target="_blank" rel="noopener" href="https://qir-alliance.github.io/qir-book/">Docs</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <main class="container py-vh-5">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-md-7">
+          <article>
+      <header class="border-bottom pb-4 mb-4">
+        <h1 class="display-1">Adaptive Profile Support in Quantinuum Helios (and System Model H2!)</h1>
+        
+          
+          
+          <aside class="fw-bold">
+            3
+            min read.
+          </aside>
+          <p>Published
+            <time datetime="2026-03-25">25 Mar 2026</time>
+          </p><a href="/tags/workstreams/" class="btn btn-outline-dark btn-sm me-2">workstreams</a><a href="/tags/recap/" class="btn btn-outline-dark btn-sm me-2">recap</a>
+
+        
+      </header>
+      <p class="lead">
+        QIR adoption by Quantinuum across multiple generation of ion trap based quantum computers
+      </p>
+      <p>As quantum computing moves from experimental labs into scalable cloud ecosystems, the need for a standardized interface between software and hardware has become critical. Historically, quantum programming languages were often siloed, requiring custom compilers for every new hardware architecture.</p>
+<p>The <a href="https://github.com/qir-alliance/qir-spec">Quantum Intermediate Representation (QIR)</a> addresses this fragmentation by providing a bridge that allows diverse programming tools to communicate seamlessly with various quantum processors.</p>
+<p>QIR is a hardware-agnostic, <a href="https://llvm.org/">LLVM</a>-based intermediate representation designed to unify quantum and classical code under a common compilation framework.</p>
+<p>Proposed and maintained by the <a href="https://www.qir-alliance.org">QIR Alliance</a> (including Quantinuum), QIR extends LLVM IR with quantum constructs, such as opaque types and specialized quantum instruction functions, allowing a wide variety of quantum front-end languages to target diverse quantum hardware back-ends, all whilst leveraging LLVM's mature optimizations and infrastructure. QIR programs adhere to different profiles, where each QIR profile is a dialect of QIR and is a feature specification for hardware providers.</p>
+<p>The <a href="https://github.com/qir-alliance/qir-spec/blob/1.0/specification/profiles/Adaptive_Profile.md">QIR adaptive profile</a> acts as a bridge between today's hardware and the sophisticated systems of the future. For example, QIR adds many of the capabilities required to move from physical qubits to logically-encoded qubits. It adds many of the instructions developers want to use to encode the logical operations, moving our community closer to a standard-based interoperable quantum-classical IR of the fault-tolerant future.</p>
+<p>Quantinuum has steadily integrated deeper QIR support with every new generation of its ion-trap quantum computers. Our System Model H1 supported the base QIR profile. With System Model H2, we introduced initial support for adaptive QIR features. Most recently, with the introduction of Helios, we now have the most complete support of QIR specification including all adaptive profile capabilities.</p>
+<p>We summarize our QIR support below:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Capabilities</strong></th>
+<th><strong>System Model H2 (QIR)</strong></th>
+<th><strong>Quantinuum Helios (QIR)</strong></th>
+<th><strong>Adaptive Profile Specification</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quantum Transformations</td>
+<td>✔</td>
+<td>✔</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>Measurements</td>
+<td>✔</td>
+<td>✔</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>Forward Branching</td>
+<td>✔</td>
+<td>✔</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>Program Output</td>
+<td>✔</td>
+<td>✔</td>
+<td>Core</td>
+</tr>
+<tr>
+<td>Classical Computations</td>
+<td>Integer-only</td>
+<td>✔</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>IR defined functions and function calls</td>
+<td></td>
+<td>✔</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Backwards Branching</td>
+<td></td>
+<td>✔</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Multiple Target Branching</td>
+<td></td>
+<td>✔</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>Multiple Return Points</td>
+<td></td>
+<td>✔</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table>
+<p>You can read more about these capabilities, with examples and detailed descriptions, on our <a href="https://docs.quantinuum.com/nexus/trainings/notebooks/basics/qir/index.html">documentation site</a>.</p>
+<p>QIR is making steady progress with <a href="https://github.com/qir-alliance/qir-spec/tree/1.0/specification">stable 1.0 version</a> release including base and adaptive profile specifications. Quantinuum is leading the way in practical adoption of the latest QIR capabilities and working with other Alliance members to define the future of the standard. Much more to come!</p>
+
+    </article>
+
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="bg-light p-4 rounded">
+  <h3>Send us updates!</h3>
+  <p> Got some news or QIR related post you want to share? Make a pull request on <a href="https://github.com/qir-alliance/qir-alliance.github.io" class="link-fancy">the repo</a> for this site, or send an email to <a href="mailto:qiralliance@mail.com" class="link-fancy">qiralliance@mail.com</a>.</p>
+</div>
+
+<div class="p-4 mt-5 border-top">
+  <h3>Tag List</h3>
+  <p>
+    
+  
+  <a href="/tags/workstreams" class="btn btn-outline-dark btn-sm me-2">workstreams
+    <span class="ms-1 badge bg-dark">
+    2
+    </span>
+  </a>
+
+  
+  <a href="/tags/recap" class="btn btn-outline-dark btn-sm me-2">recap
+    <span class="ms-1 badge bg-dark">
+    2
+    </span>
+  </a>
+
+  
+  <a href="/tags/workshop" class="btn btn-outline-dark btn-sm me-2">workshop
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+  
+  <a href="/tags/event" class="btn btn-outline-dark btn-sm me-2">event
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+  
+  <a href="/tags/qce22" class="btn btn-outline-dark btn-sm me-2">QCE22
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+  
+  <a href="/tags/get-involved" class="btn btn-outline-dark btn-sm me-2">get-involved
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+  
+  <a href="/tags/steering-committee" class="btn btn-outline-dark btn-sm me-2">steering-committee
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+  
+  <a href="/tags/organization" class="btn btn-outline-dark btn-sm me-2">organization
+    <span class="ms-1 badge bg-dark">
+    1
+    </span>
+  </a>
+
+
+  </p>
+</div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="row border-top py-5">
+  <div class="col-12">
+    <p class="">
+    ©️QIR Alliance, 2022. <br>
+    <a href="https://github.com/qir-alliance" class="link-fancy">github</a> |  
+    <a href="http://discord.unitary.fund" class="link-fancy">discord</a> | 
+    <a href="mailto:qiralliance@mail.com" class="link-fancy">email</a>
+      </p>
+      <img src="/img/footer.png" width="100%" >
+  </div>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+
+    </footer>
+
+  </body>
+
+</html>
