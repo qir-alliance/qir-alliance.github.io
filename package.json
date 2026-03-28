@@ -31,7 +31,7 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.2.0",
-    "gulp-dart-sass": "^1.0.2",
+    "gulp-dart-sass": "^1.1.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
