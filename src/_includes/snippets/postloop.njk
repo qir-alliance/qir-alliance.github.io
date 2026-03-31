@@ -4,7 +4,7 @@
       <div class="py-5 border-bottom">
         <a href="{{ post.url | url }}" class="text-decoration-none text-dark"><h2 class="display-4">{{ post.data.title}}</h2></a>
         <p>Published
-          <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          <time datetime="{{ post | publishDate | htmlDateString }}">{{ post | publishDate | readableDate }}</time>
         </p>
         <p>
         {% for tag in post.data.tags | filterTagList %}
