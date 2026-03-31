@@ -1,6 +1,6 @@
 ---
 title: Adaptive Profile Support in Quantinuum Helios (and System Model H2!)
-date: Created
+date: 2026-03-25
 summary: QIR adoption by Quantinuum across multiple generation of ion trap based quantum computers
 tags:
   - workstreams
