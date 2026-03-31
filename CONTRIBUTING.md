@@ -18,7 +18,7 @@ yaml header with the following fields:
 ```yaml
 ---
 title: The title of the news story
-date: Created
+date: YYYY-MM-DD
 summary: A short (one sentence) summary of the news story.
 tags:
   - workstream
@@ -27,8 +27,7 @@ tags:
 ---
 ```
 
-The date should be a literal date in the format `YYYY-MM-DD`, or if you want it
-to use the date the file was created, you can put `Created` in the date field.
+The date should be a literal publish date in the format `YYYY-MM-DD`.
 
 Tags should be all lowercase, words separated by dashes. If you want to see the
 existing tags, you can navigate to

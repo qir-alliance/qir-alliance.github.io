@@ -1,6 +1,6 @@
 ---
 title: QIR Workshop at IEEE Quantum Week 2022
-date: Created
+date: 2022-09-16
 summary: Workshop to discuss progress and challenges around intermediate representations and quantum compilation
 tags:
   - workshop

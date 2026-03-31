@@ -1,24 +1,8 @@
 const { DateTime } = require("luxon");
 const navigationPlugin = require('@11ty/eleventy-navigation')
 const rssPlugin = require('@11ty/eleventy-plugin-rss')
-const { resolvePostDateValue } = require("./src/_lib/post-date");
 
 module.exports = function(eleventyConfig) {
-  function getPublishDate(entry) {
-    const publishDate = resolvePostDateValue(
-      entry?.date ?? entry?.page?.date,
-      entry?.inputPath ?? entry?.page?.inputPath,
-    );
-
-    if (publishDate instanceof Date) {
-      return DateTime.fromJSDate(publishDate, {
-        zone: 'utc'
-      }).toFormat('yyyy-LL-dd');
-    }
-
-    return publishDate;
-  }
-
     /* Markdown Plugins */
     let markdownIt = require("markdown-it");
     let markdownItAnchor = require("markdown-it-anchor");
@@ -49,13 +33,6 @@ module.exports = function(eleventyConfig) {
   // })
 
   eleventyConfig.addFilter("filterTagList", filterTagList)
-  eleventyConfig.addFilter("publishDate", getPublishDate)
-
-  eleventyConfig.addCollection("postsByPublishDate", collection => {
-    return collection.getFilteredByTag("post").sort((left, right) => {
-      return getPublishDate(right).localeCompare(getPublishDate(left));
-    });
-  });
 
   eleventyConfig.addCollection("tagList", collection => {
     const tagsObject = {}
@@ -89,12 +66,6 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    if (typeof dateObj === "string") {
-      return DateTime.fromISO(dateObj, {
-        zone: 'utc'
-      }).toFormat("dd LLL yyyy");
-    }
-
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
     }).toFormat("dd LLL yyyy");
@@ -102,10 +73,6 @@ module.exports = function(eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    if (typeof dateObj === "string") {
-      return dateObj;
-    }
-
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
     }).toFormat('yyyy-LL-dd');

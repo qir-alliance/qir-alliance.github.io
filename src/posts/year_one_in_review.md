@@ -1,6 +1,6 @@
 ---
 title: NVIDIA Joins the QIR Alliance as the Effort Enters Year Two
-date: Created
+date: 2022-11-14
 summary: NVIDIA joins the QIR Alliance steering committee and recap of year one
 tags:
   - steering-committee
