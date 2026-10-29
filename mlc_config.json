@@ -2,5 +2,8 @@
   "retryOn429": true,
   "retryCount": 2,
   "fallbackRetryDelay": "5s",
-  "aliveStatusCodes": [200, 206, 403, 429]
+  "ignorePatterns": [
+    { "pattern": "^https://qce\\.quantum\\.ieee\\.org/2022/?$" },
+    { "pattern": "^https://qce\\.quantum\\.ieee\\.org/2022/workshops-program/#alexandermccaskey$" }
+  ]
 }
