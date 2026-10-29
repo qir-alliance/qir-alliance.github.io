@@ -50,7 +50,7 @@ command automatically and will refresh your browser.
 npm run build
 ```
 
-That will output the full site, with purged and minified CSS and minified html.
+That will output the full site, with purged and minified CSS.
 The output will be stored in the `/public` folder. This is done automatically
 from main in GitHub Actions, and hosted by GitHub Pages.
 

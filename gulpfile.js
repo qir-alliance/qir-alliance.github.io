@@ -6,8 +6,6 @@ var clean = require('gulp-clean');
 var browserSync = require('browser-sync').create();
 var rename = require('gulp-rename');
 const purgecss = require('gulp-purgecss');
-const imagemin = require('gulp-imagemin');
-const htmlmin = require('gulp-htmlmin');
 var htmlreplace = require('gulp-html-replace');
 var reload      = browserSync.reload;
 // Configuration file to keep your code DRY
@@ -38,14 +36,6 @@ gulp.task('minify-css', () => {
     .pipe(gulp.dest('dev/css'))
     .pipe(browserSync.stream());
 });
-
-// minifies HTML
-gulp.task('minify-html', () => {
-  return gulp.src('public/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
-    .pipe(gulp.dest('public'));
-});
-
 
 // Purging unused CSS
 gulp.task('purgecss', () => {
