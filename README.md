@@ -8,7 +8,7 @@ QIR community.
 
 ## Test build the site locally
 
-You need Node (at least v8+) on your computer. To check if you have node and
+You need Node 24 on your computer. To check if you have node and
 what version run this command in your terminal:
 
 ```bash
@@ -18,7 +18,7 @@ node --version
 Clone this repo, fire up your terminal, go to the new folder and run:
 
 ```bash
-npm install
+npm ci
 ```
 
 This will install all the dependencies.
