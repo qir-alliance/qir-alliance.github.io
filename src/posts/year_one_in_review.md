@@ -29,7 +29,7 @@ A subsequent workstream to define a more advanced profile that includes support 
 
 More information about ongoing workstreams can be found on the [GitHub org page](https://github.com/qir-alliance). In addition to facilitating discussions between industry leaders in the form of workstreams and community forums, the QIR Alliance also promotes a dialogue with the research community. Research to accelerate the development of sustainable and scalable quantum computing architectures is a vital part of the effort.
 
-*“ORNL is developing new tools to support quantum computing research, including compilation workflows for a diversity of quantum hardware systems. Open development of QIR provides a clear focal point to advance these goals and encourage the best research.”* said Travis Humble, Deputy Director of Energy’s Oak Ridge National Laboratory, Oak Ridge National Laboratory.
+*“ORNL is developing new tools to support quantum computing research, including compilation workflows for a diversity of quantum hardware systems. Open development of QIR provides a clear focal point to advance these goals and encourage the best research.”* said Travis Humble, Deputy Director of Energy’s Oak Ridge National Laboratory.
 
 A similar sentiment is also shared by Wim van Dam, who recently gave the keynote on “Azure Quantum and the Road to Scalable Quantum Computing” at the [IEEE Quantum Week 2022](https://qce.quantum.ieee.org/2022).
 
