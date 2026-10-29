@@ -9,13 +9,12 @@
   },
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run clean-prod  && npx eleventy && gulp sass && gulp dist-assets && gulp minify-css && gulp prod-copy && gulp inject-min-css && gulp purgecss && gulp minify-html",
+    "build": "npm run clean && npm run clean-prod && eleventy && gulp sass && gulp dist-assets && gulp minify-css && gulp prod-copy && gulp inject-min-css && gulp purgecss && gulp minify-html",
     "build-dev": "eleventy && gulp dist-assets && gulp sass",
     "11ty": "eleventy && gulp inject-css",
     "sync": "gulp browser-sync",
     "watch-dev": "npm run build-dev && npm run sync",
-    "postinstall": "gulp copy-assets",
-    "scss": "node-sass --output-style compressed -o dev/css/ src/scss/theme.scss",
+    "scss": "sass --style=compressed src/scss/theme.scss dev/css/theme.css",
     "watch:all": "onchange 'src/' -- npm run build-dev",
     "serve": "eleventy --serve",
     "watch": "npm run clean && npm run build-dev && run-p sync watch:all",
@@ -48,13 +47,13 @@
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "gulp-html-replace": "^1.6.2",
     "gulp-purgecss": "^5.0.0",
-    "node-sass": "^8.0.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.5",
+    "markdown-it-attrs": "^4.1.4",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.0.2",
     "react-is": "^18.1.0",
-    "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.5",
-    "markdown-it-attrs": "^4.1.4"
+    "sass": "^1.93.0"
   },
   "repository": {
     "type": "git",
